@@ -54,7 +54,7 @@
 			if($modelo->hora>2 && $modelo->hora<15){
 				imagesetthickness($this->img, 5);
 				imageline($this->img, $modelo->centrox, $modelo->centroy, $modelo->arrptosint[$modelo->hora*5-15]->x, $modelo->arrptosint[$modelo->hora*5-15]->y, $this->negro);
-			}			
+			}
 			imagepng($this->img);
 			imagedestroy($this->img);
 		}
